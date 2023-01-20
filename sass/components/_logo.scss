@@ -1,12 +1,17 @@
-.logo,
-.logo__text {
+.logo {
     color: var(--accent-color);
     font-family: var(--secondary-font-family);
     font-weight: 700;
     @include font(24px, 1.17);
     text-decoration: none;
+    
+    @media screen and (max-width: 1199px) {
+        margin-right: 87px;
+    }
+
 
     @media screen and (min-width: 1200px) {
+        margin-right: 92px;
         @include font(26px, 1.19);
     }
 }
