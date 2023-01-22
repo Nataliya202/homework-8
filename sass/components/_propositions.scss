@@ -1,38 +1,62 @@
 .propositions {
-    padding-top: 200px;
-    padding-bottom: 200px;
+
+    margin-left: auto;
+    margin-right: auto;
     background-color: var(--color-bg);
     text-align: center;
 
-    max-width: 1600px;
-    height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    outline: 1px solid black;
+    @media screen and (max-width: 1199px) {
+        height: 400px;
+        padding: 118px 0;
+    }
+
     background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url('../images/hero.jpg');
+        url('../images/hero-mobile.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    @media screen and (min-width: 1200px) {
+        padding: 200px 0;
+        max-width: 1600px;
+        height: 600px;
+        outline: 1px solid black;
+        background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+                url('../images/hero.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
 }
 
 .propositions__title{
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
-    width: 696px;
-    @include font(44px, 1.36);
+    
     color: var(--primary-white-color);
     font-weight: 900;  
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    @media screen and (max-width: 1199px) {
+        max-width: 360px;
+        @include font(26px, 1.62);
+    }
+    
+    @media screen and (min-width: 1200px) {
+        max-width: 696px;
+        @include font(44px, 1.36);
+    }
 }
 
 .propositions__button {
     @extend %button;
-    padding: 10px 32px;
+    padding: 10px 24px;
     border-radius: 4px;
     border: 1px solid transparent;
     min-width: 200px;
@@ -44,5 +68,9 @@
     &:focus{
         background-color: var(--color-button-primary);  
     }  
+    @media screen and (min-width: 1200px) {
+        padding: 10px 32px;
+        min-width: 216px;
+    }
 }
 
