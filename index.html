@@ -14,14 +14,18 @@
         <header class="page-header">
             <nav class="container page-header__nav">
                 <a class="logo" href="./index.html">Web<span class="logo__text logo__text--inverse">Studio</span></a>
-                <button type="button" class="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-menu" data-menu-open>
+                <!-- <button type="button" class="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-menu" data-menu-open>
                     <svg class="mobile-menu-btn__icon" width="40" height="40" aria-label="Перемикач мобільного меню">
-                        <use class="mobile-menu-btn__icon-menu" href="./images/menu.svg"></use>
-                        <use class="mobile-menu-btn__icon-cross" href="./images/cross.svg"></use>
+                        <use class="mobile-menu-btn__icon-menu" href="./images/sprite.svg#icon-close-icon"></use>
+                        <use class="mobile-menu-btn__icon-cross" href="./images/sprite.svg#icon-envelope"></use>
+                    </svg>
+                </button> -->
+                <button type="button" class="mobile-menu-btn" data-menu-open>
+                    <svg class="mobile-menu-btn__icon" width="40" height="40">
+                        <use href="./images/sprite.svg#icon-close-icon"></use>   
                     </svg>
                 </button>
-                
-                <div class="mobile-menu" id="mobile-menu" data-menu>
+                <!-- <div class="mobile-menu" data-menu>
                     <div class="container mobile-menu__container">
                         <ul class="mobile-menu-nav__list">
                             <li class="mobile-menu-nav__item">
@@ -42,9 +46,15 @@
                                 <a class="contacts-list__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                             </li>
                         </ul>
+                        <button type="button" class="mobile-menu-btn-close" data-menu-close>
+                            <svg class="mobile-menu-btn-close__icon" width="40" height="40">
+                            
+                                <use class="mobile-menu-btn-close__icon-cross" href="./images/sprite.svg#icon-envelope"></use>
+                            </svg>
+                        </button>
                     </div>
                     
-                </div>
+                </div> -->
     
                 <ul class="site-nav">
                     <li class="site-nav__item">
@@ -76,6 +86,35 @@
                     </li>
                 </ul>
             </nav>
+            <div class="mobile-menu" data-menu>
+                <div class="container mobile-menu__container">
+                    <ul class="mobile-menu-nav__list">
+                        <li class="mobile-menu-nav__item">
+                            <a href="" class="mobile-menu-nav__link mobile-menu-nav__link--active">Студія</a>
+                        </li>
+                        <li class="mobile-menu-nav__item">
+                            <a href="./portfolio.html" class="mobile-menu-nav__link">Портфоліо</a>
+                        </li>
+                        <li class="mobile-menu-nav__item">
+                            <a href="" class="mobile-menu-nav__link">Контакти</a>
+                        </li>
+                    </ul>
+                    <ul class="mobile-menu-contact__list">
+                        <li class="mobile-menu-contact__item">
+                            <a class="mobile-menu-contact__tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+                        </li>
+                        <li class="mobile-menu-contact__item">
+                            <a class="mobile-menu-contact__mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                    <button type="button" class="mobile-menu__btn-close" data-menu-close>
+                        <svg class="mobile-menu-btn-close__icon" width="40" height="40">
+                            <use href="./images/sprite.svg#icon-close-icon"></use>
+                        </svg>
+                    </button>
+                </div>
+            
+            </div>
         </header>
 
         <main>
