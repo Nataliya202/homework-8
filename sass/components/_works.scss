@@ -1,19 +1,19 @@
-.section-works {
+.works {
     @extend %section;
     padding-top: 0;
 }
 
-.section-works__title {
+.works__title {
     @extend %section__title;
 }
 
-.section-works__examples,
-.section-works__item,
-.section-works__box{
+.works__examples,
+.works__item,
+.works__box{
     display: flex;
 }
 
-.section-works__item {
+.works__item {
     width: 370px;
     margin-right: 30px;
     &:last-child {
@@ -21,11 +21,11 @@
     }
 }
 
-.section-works__box {
+.works__box {
     position: relative;
 }
 
-.section-works__name {
+.works__name {
     position: absolute;
     bottom: 0;
 
