@@ -200,8 +200,6 @@ img {
 
 /* Site nav */
 .site-nav {
-  font-weight: 500;
-  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 @media screen and (min-width: 768px) {
@@ -249,7 +247,6 @@ img {
 .contacts-list {
   font-size: 12px;
   line-height: 1.17;
-  font-weight: 500;
   letter-spacing: 0.02em;
   margin-left: auto;
 }
@@ -519,14 +516,17 @@ img {
   bottom: 0;
   width: 100%;
   height: 70px;
-  text-align: center;
-  text-transform: uppercase;
+  padding-top: 27px;
+  background: var(--color-bg-label);
+}
+
+.works__name {
   font-weight: 700;
   font-size: inherit;
-  line-height: 1.14;
-  padding-top: 27px;
+  line-height: inherit;
+  text-align: center;
+  text-transform: uppercase;
   color: var(--primary-white-color);
-  background: var(--color-bg-label);
 }
 
 .team {
@@ -585,9 +585,8 @@ img {
 
 .team__name {
   margin-bottom: 10px;
-  text-align: center;
   color: var(--title-text-color);
-  font-weight: 500;
+  text-align: center;
   font-size: 16px;
   line-height: 1.19;
 }
@@ -597,6 +596,7 @@ img {
   text-align: center;
   font-size: 16px;
   line-height: 1.19;
+  font-weight: 400;
 }
 
 .client-list {
@@ -645,11 +645,9 @@ img {
   border: 1px solid var(--color-link);
   border-radius: 4px;
   color: var(--color-link);
-  fill: var(--color-link);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-list__link:hover, .client-list__link:focus {
-  fill: var(--accent-color);
   color: var(--accent-color);
   border-color: var(--accent-color);
 }
@@ -700,7 +698,6 @@ img {
 
 .footer-contact {
   margin-top: 20px;
-  line-height: 1.71;
   font-weight: 400;
   font-style: normal;
 }
@@ -1117,7 +1114,7 @@ img {
 
 .projects-list__link {
   display: block;
-  background: var(--primary-white-color);
+  color: var(--primary-white-color);
   border: 1px solid var(--color-border);
   text-decoration: none;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1147,20 +1144,26 @@ img {
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 479px) {
+  .projects-list__overlay {
+    padding: 32px 15px;
+    font-size: 14px;
+    line-height: 1.56;
+  }
+}
+@media screen and (min-width: 480px) {
+  .projects-list__overlay {
+    padding: 64px 24px;
+    font-size: 18px;
+    line-height: 1.56;
+  }
+}
 .projects-list__link:hover .projects-list__overlay, .projects-list__link:focus .projects-list__overlay {
   transform: translateY(0);
 }
 
 .projects-list__description {
-  display: block;
-  width: 100%;
-  height: 100%;
-  text-align: left;
-  padding: 63px 24px;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 1.56;
-  color: var(--primary-white-color);
 }
 
 .projects-list__content {
@@ -1252,15 +1255,13 @@ img {
 }
 
 .mobile-menu-nav__list {
+  font-size: 28px;
+  line-height: 1.18;
   letter-spacing: 0.02em;
 }
 @media screen and (min-width: 480px) {
   .mobile-menu-nav__list {
     margin-bottom: 302px;
-  }
-}
-@media screen and (min-width: 480px) {
-  .mobile-menu-nav__list {
     font-size: 40px;
     line-height: 1.18;
   }
@@ -1287,6 +1288,8 @@ img {
 }
 
 .mobile-menu-contact__tel {
+  font-size: 28px;
+  line-height: 1.18;
   letter-spacing: 0.02em;
   color: var(--accent-color);
 }

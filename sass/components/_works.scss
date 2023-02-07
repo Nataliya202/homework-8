@@ -26,13 +26,18 @@
 
     width: 100%;
     height: 70px;
+    
+
+    padding-top: 27px;
+    
+    background: var(--color-bg-label);
+}
+
+.works__name{
+    font-weight: 700;
+    @include font(inherit, inherit);
     text-align: center;
     text-transform: uppercase;
 
-    font-weight: 700;
-    @include font(inherit, 1.14);
-
-    padding-top: 27px;
     color: var(--primary-white-color);
-    background: var(--color-bg-label);
 }
