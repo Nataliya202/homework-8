@@ -150,7 +150,7 @@
 }
 
 .mobile-menu-social__link {
-    @include font (14px, 1.14);
+    @include font (10px, 1.14);
     color: var(--accent-color);
     
     @media screen and (min-width: 480px) {
